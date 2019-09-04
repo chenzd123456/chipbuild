@@ -100,6 +100,7 @@ sudo sed -i "s/BROWSER_EXEC/${BROWSER}/g" /usr/share/pocket-home/config.json
 sudo skill pocket-home
 
 # Lastly, lets start up the SSH service as a precaution.
+sudo systemctl enable ssh
 sudo systemctl start ssh
 
 echo ' -- NOTE: SSH Service Started as a debugging precaution.'
